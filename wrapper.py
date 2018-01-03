@@ -43,6 +43,9 @@ def getVocabularySize():
 
 @app.route('/model/set')    
 def setModel():
+
+    global model
+
     modelSource = request.args.get('model')
     modelIsBinary = request.args.get('not_binary')
     
